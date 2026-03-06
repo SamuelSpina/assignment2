@@ -1,0 +1,73 @@
+Git Lab Tutorials date:
+March 6, 2026
+
+GitHub account setup date:
+Around January 2023
+
+GitHub repository access for instructor:
+https://github.com/SamuelSpina/assignment2.git
+
+
+1. Console output saved from the end of step 3.C:
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 539 bytes | 539.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SamuelSpina/assignment2.git
+   53470f4..be80cda  master -> master
+
+
+
+2. How many commits have been done to the repository so far?
+Command used:
+git rev-list --count HEAD
+
+Answer:
+9
+
+
+3. When was README.md modified last?
+Command used:
+git log -1 -- README.md
+
+Answer:
+Fri Mar 6 15:31:21 2026 -0500
+
+
+4. Mention two reasons why branches are used in a Git repository:
+Branches are used so developers can work on new features or fixes without disturbing the stable main branch. They are also used to isolate experiments, bug fixes, or team contributions until the changes are tested and ready to merge.
+
+
+5. What is the difference between git log and git status:
+git log shows the commit history of the repository, including previous commits, authors, dates, and messages. git status shows the current state of the working directory and staging area, such as modified, staged, or untracked files.
+
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+git log -- Vehicle.h
+
+
+7. What command would you use to see the commits whose commit message contains the word “file”?
+git log --grep="file"
+
+
+8. In the context of object-oriented programming:
+I. What is inheritance?
+Inheritance is the ability of one class to acquire the attributes and methods of another class, allowing code reuse and hierarchical class design.
+
+II. What is polymorphism?
+Polymorphism is the ability to use a common interface for different underlying forms, so the same method call can behave differently depending on the object type.
+
+III. What is encapsulation?
+Encapsulation is the practice of bundling data and methods inside a class and controlling access to the internal state through public methods.
+
+
+9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+In the integration-manager workflow, many developers maintain their own repositories and submit changes to one integration manager, who reviews and merges them into the main repository. In the dictator-and-lieutenants workflow, there is an extra hierarchy: trusted lieutenants first collect and review changes from groups of developers, and then a central leader (the dictator) pulls from the lieutenants instead of directly from everyone. This hierarchical structure is used for larger projects.
+
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+A team of 100 developers would benefit because the workflow scales better. Instead of one shared central line of development where everyone pushes directly, changes are filtered through smaller groups and lieutenants before reaching the project leader. This reduces chaos, improves review quality, distributes responsibility, and makes coordination easier in very large projects. 
