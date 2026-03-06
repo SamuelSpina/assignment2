@@ -5,7 +5,7 @@ GitHub account setup date:
 Around January 2023
 
 GitHub repository access for instructor:
-https://github.com/SamuelSpina/assignment2.git
+https://github.com/SamuelSpina/assignment2
 
 
 1. Console output saved from the end of step 3.C:
